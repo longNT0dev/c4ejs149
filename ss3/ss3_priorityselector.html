@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p {
+            color: blue;
+        }
+
+        #red-txt {
+            color: red;
+        }
+
+        .purple-txt {
+            color: purple;
+        } */
+
+        /* Ghi đè trong css: Code luôn chạy từ trên xuống dưới và sẽ luôn nhận style cuối cùng nếu như
+        sử dụng cùng 1 kiểu bộ chọn         
+        */
+
+        /* Thứ tự độ ưu tiên: id > class > tên thẻ > Ghi đè */
+        #change-color {
+            color: orange;
+        }
+
+        .change-color-class {
+            color: brown;
+        }
+
+        p {
+            color: red;
+        }
+
+        p {
+            color: blue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <p id="change-color" class="change-color-class">Đây là ví dụ về internal style 1</p>
+
+    <!-- <p id="red-txt">Đây là ví dụ về internal style 2</p>
+
+    <p class="purple-txt">Đây là ví dụ về internal style 3</p> -->
+</body>
+
+</html>
