@@ -33,12 +33,17 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-width: 512px
 }
 
 nav {
     width: calc(100% - 190px);
     display: flex;
     justify-content: space-between;
+}
+
+.nav-mobile {
+    display: none;
 }
 
 .search-bar {
@@ -65,3 +70,19 @@ nav {
 }
 
 /* scss */
+
+@media screen and (max-width: 576px) {
+    nav {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: block;
+    }
+
+    header {
+        width: 100%;
+        margin: unset;
+        padding: 0 16px;
+    }
+}
