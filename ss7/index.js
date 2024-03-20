@@ -6,9 +6,9 @@
 // Khai báo biến 
 // Từ khóa khai báo biến + Tên biến = Giá trị của biến 
 // 1. Từ khóa khai báo biến
-        // let: Khai báo 1 biến có phạm vi cục bộ  (scope)
-        // const: Khai báo 1 biến thì giá trị của biến đó không thể bị thay đổi
-        // var: Khai báo 1 biến có phạm vi toàn cục 
+// let: Khai báo 1 biến có phạm vi cục bộ  (scope)
+// const: Khai báo 1 biến thì giá trị của biến đó không thể bị thay đổi
+// var: Khai báo 1 biến có phạm vi toàn cục 
 
 // To nhất
 {
@@ -20,12 +20,12 @@
 // Có thể sử dụng biến a ở ngoài đây
 
 // 2. Tên biến: Đặt mọi tên có thể trừ 1 số trường hợp sau
-        // Trùng với các từ khóa trong javascript
-        // Tên biến không được bắt đầu bằng số
-        // Tên biến không được chứa dấu cách
-        // Tên biến không được chứa 1 số ký tự đặc biệt -, %
-        // Tên biến thì nên mang ý nghĩa
-        // camelCase, snake_case
+// Trùng với các từ khóa trong javascript
+// Tên biến không được bắt đầu bằng số
+// Tên biến không được chứa dấu cách
+// Tên biến không được chứa 1 số ký tự đặc biệt -, %
+// Tên biến thì nên mang ý nghĩa
+// camelCase, snake_case
 
 // 3. Giá trị của biến -> Kiểu dữ liệu
 // Các kiểu dữ liệu nguyên thủy (primitive)
@@ -91,11 +91,20 @@
 
 // console.log("Giá trị biến a sau khi cộng là", a);
 
-let a = 1
+// let a = 1
 
-let b = false
+// let b = false
 
-console.log(a + b);
-console.log(typeof (a + b));
+// console.log(a + b);
+// console.log(typeof (a + b));
 
 // Ép kiểu, prompt 
+
+// Hàm prompt: Nhận dữ liệu từ người dùng thông dialog
+
+let userInput1 = Number(prompt("Nhập vào tuổi của bạn"))
+let userInput2 = parseInt(prompt("Nhập vào tuổi của bạn"))
+let userInput3 = +prompt("Nhập vào tuổi của bạn")
+
+console.log(userInput1, userInput2, userInput3);
+console.log("test");
