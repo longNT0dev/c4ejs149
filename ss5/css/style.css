@@ -38,9 +38,40 @@ header {
 
 nav {
     width: calc(100% - 190px);
+    height: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
+.dropdown-container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-container:hover .dropdown-more {
+    display: block;
+}
+
+
+.dropdown-more {
+    background-color: #4646bb;
+    position: absolute;
+    top: 32px;
+    right: -40px;
+    border: 1px solid #bababa;
+    border-radius: 2px;
+    padding: 4px 20px 4px 4px;
+    display: none;
+}
+
+.dropdown-more div {
+    cursor: pointer;
+}
+
+
 
 .nav-mobile {
     display: none;
