@@ -102,9 +102,37 @@
 
 // Hàm prompt: Nhận dữ liệu từ người dùng thông dialog
 
-let userInput1 = Number(prompt("Nhập vào tuổi của bạn"))
-let userInput2 = parseInt(prompt("Nhập vào tuổi của bạn"))
-let userInput3 = +prompt("Nhập vào tuổi của bạn")
+// let userInput1 = Number(prompt("Nhập vào tuổi của bạn"))
+// let userInput2 = parseInt(prompt("Nhập vào tuổi của bạn"))
+// let userInput3 = +prompt("Nhập   vào tuổi của bạn")
 
-console.log(userInput1, userInput2, userInput3);
-console.log("test");
+// console.log(userInput1, userInput2, userInput3);
+// console.log("test");
+
+
+// Câu 2 
+// let userInput = +prompt("Nhập thời gian muốn chuyển đổi")
+
+// let hours = parseInt(userInput / 3600)
+// let minutes = parseInt((userInput % 3600) / 60)
+// let seconds = userInput % 60
+
+// console.log(`${hours}h ${minutes}m ${seconds}s`);
+
+// Câu 3
+// let coSo = +prompt("Nhập vào cơ số")
+// let luyThua = +prompt("Nhập vào lũy thừa")
+
+
+// console.log(Math.pow(coSo, luyThua));
+
+// Câu 5
+
+let x1 = +prompt("Nhập vào tọa độ x của điểm 1")
+let x2 = +prompt("Nhập vào tọa độ x của điểm 2")
+let y1 = +prompt("Nhập vào tọa độ y của điểm 1")
+let y2 = +prompt("Nhập vào tọa độ y của điểm 2")
+
+let distance = Math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
+
+console.log(distance);
