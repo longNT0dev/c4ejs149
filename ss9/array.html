@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Ex 1
+        // let emptyArr = []
+
+        // let numbers = [1, 2, 3, 4, 5, 6, 7]
+
+        // console.log(`Độ dài của mảng là ${numbers.length}`);
+
+        // console.log(`Phần tử đầu tiên của mảng là: ${numbers[0]}
+        //              Phần tử ở giữa của mảng là: ${numbers[(numbers.length - 1)/2]}
+        //              Phần tử cuối cùng của mảng là:  ${numbers[numbers.length - 1]}
+        //             `);
+
+        // let mixedDataTypes = [1, "Long", null, true, [1, 5], undefined]
+
+        // let itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+
+        // console.log(itCompanies);
+
+        // console.log(itCompanies.length);
+
+        // console.log(`Phần tử đầu tiên của mảng là: ${itCompanies[0]}
+        //              Phần tử ở giữa của mảng là: ${itCompanies[(numbers.length - 1)/2]}
+        //              Phần tử cuối cùng của mảng là:  ${itCompanies[numbers.length - 1]}
+        //             `);
+
+        // for (let i = 0; i < itCompanies.length; i++) {
+        //     console.log(itCompanies[i]);
+        // }
+
+        // for (let i = 0; i < itCompanies.length; i++) {
+        //     itCompanies[i] = itCompanies[i].toUpperCase()
+        //     console.log(itCompanies[i]);
+        // }
+
+        // let itCompaniesStr = ""
+
+        // for (let i = 0; i < itCompanies.length - 1; i++) {
+        //     if (i == itCompanies.length - 2) {
+        //         itCompaniesStr += itCompanies[i]
+        //         continue
+        //     }
+        //     itCompaniesStr += itCompanies[i] + ", "
+        // }
+
+        // console.log(`${itCompaniesStr} and Amazon are big IT companies`);
+
+        // let itCompanyToFind = prompt("Enter a company to find")
+
+        // let isExistCompany = false
+        // for(let i = 0; i< itCompanies.length; i++) {
+        //     if(itCompanies[i] === itCompanyToFind) {
+        //         isExistCompany = true
+        //         break
+        //     }
+        // }
+
+        // if(isExistCompany) {
+        //     console.log("Tìm thấy");
+        // } else {
+        //     console.log("Not found");
+        // }
+
+        // console.log("Slice out the first 3 companies from the array", itCompanies.slice(0, 3));
+        // console.log("Slice out the last 3 companies from the array", itCompanies.slice(itCompanies.length -3, itCompanies.length));
+        // console.log("Slice out the middle IT company or companies from the array", itCompanies.slice((itCompanies.length - 1) / 2, (itCompanies.length - 1) / 2 + 1));
+
+
+        // // itCompanies.shift();
+
+        // itCompanies.splice((itCompanies.length - 1) / 2, 1)
+
+        // console.log(itCompanies);
+
+        // // itCompanies.pop()
+
+        // itCompanies.length = 0
+
+        // console.log(itCompanies);
+        // let result = [...itCompanies]
+        // for(let i = 0; i < itCompanies.length; i++) {
+        //     let countChar = 0
+        //     for(let j = 0; j < itCompanies[i].length; j++) {
+        //         if(itCompanies[i][j] === "O") {
+        //             countChar++
+        //         }
+        //         console.log(itCompanies[i][j]);
+        //     }
+        //     if(countChar >= 2) {
+        //         result.splice(i, 1)
+        //     }
+        // }
+
+        // console.log(result);
+
+        // Ex2 
+        // 2.
+        // let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+
+        // function removePunctuationText(str) {
+        //     return str.replace(/[.,]/g,"")
+        // }
+
+        // let processedText = removePunctuationText(text) 
+
+        // console.log(processedText);
+
+        // let wordArr = processedText.split(" ")
+
+        // console.log(wordArr);
+        // console.log(wordArr.length)
+
+        // typescript = type + javascript
+
+        //3.
+        // const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+
+        // if (!shoppingCart.includes("Meat")) {
+        //     shoppingCart.unshift("Meat")
+        // }
+
+        // console.log("Cart after insert Meat:", shoppingCart);
+
+        // if (!shoppingCart.includes("Sugar")) {
+        //     shoppingCart.push("Sugar")
+        // }
+
+        // console.log("Cart after insert Sugar:", shoppingCart);
+
+        // let isAllergic = true
+
+        // if (isAllergic) {
+        //     let indexOfHoney = shoppingCart.indexOf("Honey")
+
+        //     if (indexOfHoney >= 0) {
+        //         shoppingCart.splice(indexOfHoney, 1)
+
+        //         console.log(shoppingCart);
+        //     }
+        // }
+
+
+        // let indexOfTea = shoppingCart.indexOf("Tea")
+
+        // if (indexOfTea >= 0) {
+        //    shoppingCart[indexOfTea] = "Green Tea"
+        // }
+
+        // console.log(shoppingCart);
+
+        // Ex3: 
+        const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]    
+
+        let sum = 0
+        for(let i = 0; i< ages.length; i++) {
+            sum += ages[i]
+        }
+
+        console.log("Trung bình độ tuổi là: ", sum / ages.length);
+    </script>
+</body>
+
+</html>

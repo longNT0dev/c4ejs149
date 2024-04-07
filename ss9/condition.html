@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Ex1.1. 
+        let userInput = +prompt("Enter your age")
+
+        if (userInput >= 18) {
+            console.log("You are old enough to drive");
+        } else {
+            console.log(`You are left with ${18 - userInput} years to drive`);
+        }
+
+        // Ex1.2. 
+        const myAge = 30
+
+        let yourAge = +prompt("Enter your age")
+        let difference = Math.abs(yourAge - myAge)
+        if (yourAge > myAge) {
+            console.log(`Bạn lớn hơn tôi ${difference} years`);
+        } else if (yourAge < myAge) {
+            console.log(`Tôi lớn hơn bạn ${difference} years`);
+        }
+
+        // Ex1.3. 
+        let a = 4
+        let b = 3
+        let result = a > b ? `${a} lớn hơn ${b}` : `${a} nhỏ hơn ${b}`
+
+        // Ex2.1.
+        let studentScore = +prompt("Enter student score")
+
+        if(studentScore >= 80 && studentScore <= 100) {
+            console.log("Học sinh xếp loại A");
+        } else if(studentScore >= 70 && studentScore <= 79) {
+            console.log("Học sinh xếp loại B");
+        } else if(studentScore >= 60 && studentScore <= 69) {
+            console.log("Học sinh xếp loại C");
+        } else if(studentScore >= 50 && studentScore <= 59) {
+            console.log("Học sinh xếp loại D");
+        } else if(studentScore >= 0 && studentScore <= 49) {
+            console.log("Học sinh xếp loại F");
+        }
+
+        // Ex2.2. 
+        let monthFromInput = prompt("Enter a month")
+        let upperCaseMonth = monthFromInput.toUpperCase()
+        switch(monthFromInput) {
+            case "SEPTEMBER":
+            case "OCTOBER":
+            case "NOVEMBER":
+                console.log("the season is Autumn.");
+                break;
+        }
+
+        // Ex3.1. 
+
+    </script>
+</body>
+
+</html>

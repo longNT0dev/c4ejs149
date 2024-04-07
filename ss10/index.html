@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Create
+        // let user = {
+        //     name: "Long",
+        //     password: "123456", // Mã hóa mật khẩu 
+        //     age: 40,
+        //     country: "VN",
+        //     // nested object
+        //     metadata: {
+        //         avatarUrl: "http://something",
+        //         friendList: []
+        //     }
+        // }
+
+        // Read
+        // console.log(user.password);
+        // console.log(user.metadata.avatarUrl);
+
+        // for(let key in user) {
+        //     console.log(user[key])
+        // }
+
+        // Update
+        // user.password = "New Password";
+
+        // console.log("Tài khoản sau khi cập nhật mật khẩu là: ", user);
+
+        // Delete
+        // delete user.age
+
+        // console.log("Tài khoản sau khi xóa tuổi là: ", user);
+
+        // Method (function) của object
+
+        // assign
+        // let a = {
+        //     name: "Mindx"
+        // }
+
+        // let b = {
+        //     age: 9
+        // }
+
+        // let c = {
+        //     age: 8
+        // }
+
+        // let d = {
+        //     name: "Long",
+        //     age: 30
+        // }
+
+        // let mindxInfo = Object.assign(a, b, c, d) // Trong 1 object thì key phải là duy nhất, không được trùng nhau
+
+
+        // console.log(mindxInfo);
+
+        //   Input (Nhận vào nhiều input)  ->  Function: Nhà máy (Xử lý input đầu vào) -> Output 
+
+        // Create 
+        function funcName(input1, input2, input3) { // parameters
+            // TODO: Xử lý logic gì đó 
+        }
+
+        function sum(number1, number2) {
+            if (!Number.isNaN(+number1) && !Number.isNaN(+number2)) {
+                console.log("Tổng của 2 số là:", number1 + number2);
+            }
+        }
+
+
+        // Lời gọi hàm
+        // sum(2, 3)
+        // sum(10, 20)
+        // sum(10, "2dffsf")
+
+        // Input1 -> Function1 -> Output1, Output1 -> Function2 -> Output2
+        function returnSum(number1, number2) {
+            if (!Number.isNaN(+number1) && !Number.isNaN(+number2)) {
+                return number1 + number2;
+            }
+        }
+
+        function multiplyWith2(num) {
+            console.log("Giá trị của num là:", num);
+            console.log("Giá trị của num sau khi nhân 2 là:", num * 2)
+        }
+
+        let sumOfTwoNumbers = returnSum(4, 5)
+
+        multiplyWith2(sumOfTwoNumbers)
+
+
+        // (function() {
+        //     console.log("Hello bro");
+        // }())
+    </script>
+
+</body>
+
+</html>

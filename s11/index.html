@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div id="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+
+    <div class="item"></div>
+
+    <a href="">Hello</a> -->
+
+    <!-- <div id="container-1">
+        <div id="child-1">1</div>
+        <div id="child-2">2</div>
+    </div>
+
+    <div id="container-2"> -->
+
+    <!-- <div id="clickable">Bấm vào đây!</div>
+
+    </div> -->
+
+    <input type="text" id="username">
+
+    <script>
+
+        const username = document.getElementById("username");
+
+        // username.addEventListener("change", function (e) {
+        //     console.log(e.target.value)
+        // })
+
+        username.addEventListener("keydown", function(e) {
+            console.log(e);
+        })
+
+        // const clickableDiv = document.getElementById("clickable")
+
+        // function printSomethingOnScreen(event) {
+        //     console.log(event);
+        //     console.log("Tôi vừa được bấm");
+        // }
+
+        // clickableDiv.addEventListener("click", printSomethingOnScreen)
+
+        // setTimeout(() => {
+        //     clickableDiv.removeEventListener("click", printSomethingOnScreen)
+        // }, 10000)
+
+
+        // console.dir(document);
+
+        // // Nếu lấy theo id -> Trả về 1 thẻ html duy nhất 
+        // console.log(document.getElementById('container'));
+
+        // // Nếu lấy theo class -> Trả về 1 Collection (Array)
+        // console.log(document.getElementsByClassName('item'));
+
+
+        // console.log(document.getElementsByTagName("a"))
+
+        // console.log(document.querySelectorAll(".item"));
+        // console.log(document.querySelectorAll("#container"));
+
+        // Create
+        // const $container = document.getElementById('container')
+
+        // // Read
+        // console.log($container);
+        // console.log($container.innerHTML); // Đọc tất cả thẻ nằm bên trong container
+        // console.log($container.innerText); // Chỉ đọc ra text
+
+        // // Update
+        // $container.innerText = "Nội dung text bên trong đã bị thay đổi!!"
+
+        // $container.innerHTML = `<h1>Buổi hôm nay học về DOM - tạo trang web động</h1>`
+
+        // $container.style.fontSize = "40px" // camelCase
+        // $container.style.color = "red"
+        // $container.style.backgroundColor = "blue"
+        // const $container1 = document.getElementById("container-1")
+        // const $container2 = document.getElementById("container-2")
+
+        // const spanEl = document.createElement("span")
+        // const spanE = document.createElement("span")
+
+        // spanEl.innerText = "Xin chào, tôi là thẻ span 1"
+        // // spanEl.setAttribute("class", "first")
+        // spanE.innerText = "Xin chào, tôi là thẻ span 1"
+        // // spanE.setAttribute("class", "first")
+        // $container1.appendChild(spanEl)
+        // $container1.appendChild(spanE)
+        // $container1.appendChild(spanEl)
+        // $container2.appendChild(spanEl)
+
+
+        // const childNeedChanged = document.getElementById("child-1")
+        // const h1Tag = document.createElement("h1")
+
+        // h1Tag.innerText = "Hello, tôi thay thế thẻ có id là child-1"
+        // $container1.replaceChild(h1Tag, childNeedChanged)
+
+        // console.log($container1.lastElementChild);
+        // $container1.removeChild($container1.lastElementChild)
+    </script>
+</body>
+
+</html>

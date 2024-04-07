@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // CRUD: Create - Read - Update - Delete
+        // Create array?
+        let daysInWeek = [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" ];
+
+        // Read: Thông qua chỉ số mảng (index) -> Bắt đầu từ 0
+        // console.log(daysInWeek[2]);
+        // console.log(daysInWeek[6]);
+        // Đọc tất cả phần tử trong mảng
+        for(let i = 0; i < daysInWeek.length; i++) {
+            daysInWeek[i] = daysInWeek[i] + "Một thứ gì đó"
+        }
+
+        console.log(daysInWeek);
+
+        // Update
+        daysInWeek[5] = "Weekend"
+        daysInWeek[6] = "Weekend"
+
+        // console.log(daysInWeek);
+
+
+        // Method (Phương thức) hoặc Function (hàm) -> Thực hiện 1 cái công việc nào đó 
+    </script>
+</body>
+</html>

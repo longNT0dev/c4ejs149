@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 2.1.
+        // function randomStr(strLength) {
+        //     let characters = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        //     let result = ""
+        //     for(let i = 0; i < strLength; i++) {
+        //         let randomNumber = parseInt(Math.random() * characters.length) // (0,1) -> (0, characters.length) 
+        //         let randomCharacter = characters[randomNumber]
+            
+        //         result += randomCharacter
+        //     }
+
+        //     return result
+        // }
+
+        // console.log(randomStr(12)); 
+
+        // 2.2.
+
+        function randomHexa() {
+            let hexaChars = "0123456789ABCDEF"
+            let result = "#"
+            for(let i = 0; i < 6; i++) {
+                let randomNumber = parseInt(Math.random() * hexaChars.length) // (0,1) -> (0, characters.length) 
+
+                let randomCharacter = hexaChars[randomNumber]
+
+                result += randomCharacter
+            }
+
+            return result
+        }
+
+        console.log(randomHexa());
+    </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Câu lệnh điều kiện (rẽ nhánh): if...else if...else , switch...case
+        // let isRaining = true
+
+        // if(isRaining) {
+        //     // Thực hiện hành động trong đây 
+        //     console.log("Trời đang mưa, làm gì bây giờ nhỉ?")
+
+        //     let isGoingToSchool = false
+
+        //     if(isGoingToSchool) {
+        //         console.log("Tôi đang ở trên mindX học lập trình");
+        //     } else {
+        //         console.log("Tôi đang ở nhà ngủ, chơi game, đọc sách,...");
+        //     }
+        // }
+
+        // Kiểm tra 1 số là số dương hay âm -> > 0, < 0 , == 0
+        // let numberToCheck = +prompt("Nhập vào 1 số để kiểm tra") // Dữ liệu nhập vào luôn có kiểu dữ liệu string
+
+        // if(numberToCheck >= 0) {
+        //     // Chắc chắn code chạy vào đây > 0, = 0
+        //     if(numberToCheck > 0) {
+        //         console.log("Số vừa nhập vào là số dương");
+        //     } else {
+        //         console.log("Số vừa nhập vào không phải số dương cũng không phải số âm");
+        //     }
+        // } else {
+        //     console.log("Số vừa nhập vào là số âm");
+        // }
+
+
+        // if (!numberToCheck) {
+        //     console.log("Giá trị bạn vừa nhập không phải số");
+        // } else {
+        //     if (numberToCheck > 0) {
+        //         console.log("Số vừa nhập vào là số dương");
+        //     } else if (numberToCheck < 0) {
+        //         console.log("Số vừa nhập vào là số âm");
+        //     } else if (numberToCheck == 0) {
+        //         console.log("Số vừa nhập vào không phải số dương cũng không phải số âm");
+        //     } else { // Tất cả trường hợp còn lại
+        //         console.log("Có lỗi xảy ra");
+        //     }
+        // }
+
+        // Trong javascript có 1 số giá trị gọi truthy, 1 số giá trị falsy
+        // truthy: 
+        // 1. Một biến có giá trị thường là truthy
+        // falsy:
+        // 1. Một biến mang giá trị là 0 
+        // 2. Một biến mang giá trị là "", null, undefined, NaN
+
+        // let currentDay = 8
+        // switch (currentDay) {
+        //     case 2:
+        //         console.log("Hôm nay là thứ 2");
+        //         break // Thoát ra, dừng lại 1 khối lệnh 
+        //     case 3:
+        //         console.log("Hôm nay là thứ 3");
+        //         break
+        //     case 4:
+        //         console.log("Hôm nay là thứ 4");
+        //         break
+        //     case 8:
+        //         console.log("Hôm nay là ngày cuối tuần");
+        //         break
+        //     default:
+        //         console.log("Vào ngày đặc biệt chưa nghĩ tới!")
+        //         break
+        // }
+        
+        // Vòng lặp
+        // let sum = 0
+        // for (let i = 0; i < 100; i++) {
+        //     sum += i
+        // }
+
+        // for(let i = 0; i< 100; i++) {
+        //     if(i % 2 == 0) {
+        //         // Số chẵn
+        //         sum = sum + i
+        //     } 
+        // }
+
+        // console.log(sum)
+
+        // for(let i = 0; i< 10; i++) {
+        //     if(i == 4) {
+        //         continue
+        //     }
+        //     console.log(`Đơn giản chỉ là in giá trị của i=${i}`);
+        // }
+
+        // let i = 0
+        // while(i < 10) {
+        //     if(i == 4) {
+        //         continue
+        //     }
+        //     console.log(`Đơn giản chỉ là in giá trị của i=${i}`);
+        //     i++
+        // }
+
+        // do...while: Chắc chắn chạy ít nhất 1 lần 
+        let isValidNumber = false
+        do {
+            let userInput = +prompt("Nhập vào 1 số")
+
+            if(userInput) {
+                isValidNumber = true
+            }
+        } while (!isValidNumber)
+
+    </script>
+</body>
+
+</html>
